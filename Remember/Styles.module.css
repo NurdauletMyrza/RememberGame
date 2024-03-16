@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
 .page-wrapper {
   position: absolute;
   box-sizing: border-box;
@@ -7,6 +9,10 @@
   height: 100vh;
   background-color: #323437;
   padding: 5vh 10vw;
+}
+
+.page-wrapper > * {
+  font-family: "Lexend Deca";
 }
 
 .header {
@@ -80,9 +86,64 @@
   background: radial-gradient(black, rgba(0, 0, 0, 0.5));
 }
 
+/* Leaderboard page */
+.leaderboard {
+  box-sizing: border-box;
+  margin: 100px auto;
+  border: 1px solid #32343F;
+  width: 900px;
+  overflow: scroll;
+}
+.leaderboard__header {
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 125%;
+  color: #D8DEE9;
+}
+
+.leaderboard__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard__table-row:nth-child(even) {
+  background-color: #646669;
+}
+.leaderboard__table-cell {
+  color: #D8DEE9;
+}
+
+.leaderboard__table-cell:nth-child(1) {
+  width: 10%;
+}
+.leaderboard__table-cell:nth-child(2) {
+  width: 60%;
+}
+.leaderboard__table-cell:nth-child(3) {
+  width: 30%;
+  text-align: right;
+}
 
 
+/* About page */
+.about {
+  padding: 0 30px;
+}
 
+.about__header {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  color: #D8DEE9BF;
+}
+
+.about__content {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: justify;
+  color: #D8DEE9;
+}
 
 /* .header {
   position: sticky;

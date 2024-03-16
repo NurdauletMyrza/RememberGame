@@ -3,6 +3,8 @@ import { Suspense, createContext, useEffect, useState } from "react";
 import styles from "./Styles.module.css";
 import { SignInPage, SignUpPage } from "./AuthenticationPages";
 import MainPage from "./MainPage";
+import AboutPage from "./AboutPage";
+import LeaderboardPage from "./LeaderboardPage";
 
 export const UserContext = createContext();
 
@@ -93,8 +95,8 @@ function App() {
         <Route path="/sign-in" element={<SignInPage onSignIn={onSignIn} />} />
         <Route path="/sign-up" element={<SignUpPage onSignUp={onSignUp} />} />
         <Route path="/main" element={<MainPage />} />
-        <Route path="/leaderboard" element={<div>leaderboard page</div>} />
-        <Route path="/about" element={<div>about page</div>} />
+        <Route path="/leaderboard" element={<LeaderboardPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/user/:id" element={<div>user page</div>} />
       </Routes>
     </UserContext.Provider>
